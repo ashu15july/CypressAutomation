@@ -1,5 +1,4 @@
 const { defineConfig } = require('cypress');
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
   projectId: 'bihkbh',
@@ -14,8 +13,6 @@ module.exports = defineConfig({
     // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
-      allureWriter(on, config);
-            return config;
     },
     specPattern: 'cypress/e2e/examples/*.js'
   },
