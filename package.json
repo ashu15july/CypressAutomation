@@ -1,0 +1,18 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startAutomation": "npx cypress run --headed --browser chrome --spec cypress/e2e/examples/**.js"
+     },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^11.2.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "mocha": "^10.1.0"
+  }
+}
