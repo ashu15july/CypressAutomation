@@ -9,7 +9,7 @@ describe('Validate Home Page', function()
         cy.visit(Cypress.env('url'))
         homePage.acceptCookies()
         homePage.clickOnMeetActabl()
-        aboutUs.getElementForAllPeople().should('have.length',12)
+        aboutUs.getElementForAllPeople().should('have.length',11)
         aboutUs.printOutAllKeyPeoples()
     })
 
